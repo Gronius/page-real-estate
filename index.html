@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real-estate-company</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    rel="stylesheet"
+  />
+    
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./style/modwin.css">
+  <link rel="stylesheet" href="./style/styles.css">
+  </head>
+  <body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__nav">
+        <div class="header__logo">
+          <a class="logo" href=""><img src="./images/icons/key.png" alt=""></a>
+        </div>
+        <div class="nav">
+          <div class="nav__toggle" onclick="toggleMenu()">&#9776;</div>   
+              <!-- Burger menu button -->
+            <ul class="nav__list ">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contacts</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </header>
+    
+<main class="main"> 
+
+<!-- Home -->
+<section id="home" class="home">
+  <div class="container home__container">
+    <div class="home__intent">
+      <div class="home__estate">
+        <div class="fa-solid fa-house"></div>
+          <h5 id="underline-text">Real estate company</h5>
+      </div>
+          <h2 class="home-title">Welcome to our website!</h2>
+          <p>
+            Find your perfect home with us. Explore our latest projects and learn more about our services.
+          </p>
+        <div class="btn-box">
+          <button class="open-form btn-project btn" data-form="appointment-form">Make an appointment</button>  
+        </div>
+    </div>
+        <div class="intent__image">
+          <img src="./images/kubyk.jpg" alt="" />
+        </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects section fade-in">
+  <div class="container">
+    <h2>Our projects</h2>
+    <div class="project-list">
+      <!-- Project 1 -->
+      <div class="project ">
+        <div class="image-container">
+          <img src="./images/kubyk1.jpg" alt="Проект 1" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 400">
+            <g id="RD5" class="clickable" data-plan="plan1">
+              <polygon
+                points="205,316 205,242 234,240 224,228 224,58 356,9 438,71 440,88 519,142 517,251 498,254 498,318 356,329 205,321"style="fill: #e9f1f3;opacity: 0.3"
+              />
+            </g>
+            <g id="RD6" class="clickable" data-plan="plan2">
+              <polygon
+                points="32,252 33,151 133,121 132,102 222,77 221,224 132,235 133,243 31,254"style="fill: #e9f1f3;opacity: 0.3"
+              />
+            </g>
+          </svg>
+          <div class="tooltip" id="tooltip"></div>
+        </div>
+          <h3>"Harmony" - modern residential complex</h3>
+            <div class="text-content">
+              <p>The complex is located in the city center and consists of four apartments equipped with the latest technologies, such as smart home management systems, eco-friendly materials, and energy-saving solutions. For the convenience of residents, the project includes green areas, children's and sports playgrounds, a swimming pool, and an underground parking.</p>
+            </div>
+          <a href="#" class="btn">More details</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project ">
+        <div class="image-container">
+          <img src="./images/kubyk2.jpg" alt="Проект 2" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 400">
+            <g id="RD7" class="clickable" data-plan="plan3">
+              <polygon
+                points="110,197 111,170 126,165 123,137 189,148 208,143 310,156 412,126 427,131 429,175 310,244 211,222 213,204 186,213 111,196"
+                style="fill: #e9f1f3;opacity: 0.3" />
+            </g>
+            <g id="RD8" class="clickable" data-plan="plan4">
+              <polygon
+                points="114,121 118,120 119,106 137,102 137,58 215,66 216,83 317,90 413,73 414,128 312,161 312,148 217,136 218,148 207,142 191,147 113,135 113,123" style="fill: #e9f1f3;opacity: 0.3"/>
+            </g>
+          </svg>
+          <div class="tooltip" id="tooltip"></div>
+        </div>
+        <h3>Cottage complex "Urban Oasis"</h3>
+        <div class="text-content">
+          <p>"Urban Oasis" is a perfect blend of modern living with the comfort of nature. We offer detached houses with large balconies, panoramic windows, and modern layouts. The area is equipped with infrastructure for active recreation and has convenient transport links to the city, ensuring easy access to all necessary amenities and a comfortable lifestyle.</p>
+        </div>    
+        <a href="#" class="btn">More details</a>
+      </div>
+  </div>  
+</section>
+
+<!-- Tours-gallery -->
+<section id="gallery" class="gallery ">
+  <div class="container">
+      <h2>Gallery</h2>
+      <p>Take a virtual tour of the property and assess the quality and comfort.</p>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/gallery/homen1.jpg" alt="homen 1" data-src="./images/gallery/homen1.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen2.jpg" alt="homen 2" data-src="./images/gallery/homen2.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen3.jpg" alt="homen 3" data-src="./images/gallery/homen3.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen4.jpg" alt="homen 4" data-src="./images/gallery/homen4.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen5.jpg" alt="homen 5" data-src="./images/gallery/homen5.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen6.jpg" alt="homen 6" data-src="./images/gallery/homen6.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen7.jpg" alt="homen 7" data-src="./images/gallery/homen7.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen8.jpg" alt="homen 8" data-src="./images/gallery/homen8.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen9.jpg" alt="homen 9" data-src="./images/gallery/homen9.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen10.jpg" alt="homen 10" data-src="./images/gallery/homen10.jpg" onclick="openModal(this)"></div>
+              <div class="swiper-slide"><img src="./images/gallery/homen11.jpg" alt="homen 11" data-src="./images/gallery/homen11.jpg" onclick="openModal(this)"></div>
+          </div>
+          <div class="swiper-button-next">&#10095;</div>
+          <div class="swiper-button-prev">&#10094;</div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+</section>
+    
+<!-- Choose-us -->
+<section id="about" class="about section fade-in">
+  <div class="container">
+    <h2>Why choose us?</h2>
+    <div class="about__container">
+      <div class="benefits__block">
+        <div class="benefits">
+          <div class="benefit-item">
+            <img src="./images/icons/home1.png" alt="Quality Service">
+            <h3>Experience and Quality Service</h3>
+            <p>We have over 20 years of experience in the construction industry. We provide first-class service, focused on the needs of our clients.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="./images/icons/home2.png" alt="Modern Technologies">
+            <h3>Personalized Approach and Technology</h3>
+            <p>Each project is unique and adapted to the client's requirements. We use the latest technologies and approaches to ensure the best result.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="./images/icons/home3.png" alt="Competitive Prices">
+            <h3>Competitive prices and guarantees.</h3>
+            <p>We offer competitive prices without compromising quality. We have a flexible system of discounts and bonuses for regular customers. We provide guarantees on all our services and products.</p>
+          </div>
+          <div class="benefit-btn">
+            <button class="open-form btn-project btn " data-form="buy-real-estate">Reserve a property</buton>
+          </div>  
+        </div>
+     </div>
+        <div class="benefit-properti">
+          <div class="properti-block">
+            <div class="benefit-card">
+              <div class="card-filling">
+                <div class="benefit-filling">
+                  <img src="./images/icons/key1.png" alt="">
+                  <p>10,000+</p>
+                </div>
+                <div class="benefit-sold">
+                  <p>Properties Sold</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit-drawing">
+              <img src="./images/kubyk4.jpg" alt="">
+            </div>
+          </div>
+            <div class="benefit-draw">
+              <img src="./images/kubyk9.jpg" alt="">
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Statistics -->
+<section id="statistics" class="statistics section fade-in">
+  <div class="container">
+      <div class="stat-item">
+          <div class="stat-value">20+</div>
+          <div class="stat-label">Years in the industry</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="statValue">0%</div>
+        <div class="stat-label">Customer satisfaction</div>
+      </div>
+      <div class="stat-item">
+          <div class="stat-value">10K</div>
+          <div class="stat-label">Real estate sold</div>
+      </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services section fade-in">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="services__container">
+      <div class="service-item">
+          <i class="fas fa-home"></i>
+          <h3>Sell A Property</h3>
+          <p>"Looking for a reliable partner to sell your property quickly and profitably? Our experience and professional approach to property sales guarantee that you will get the best price and conditions. </p>
+          <a href="#services" class="learn-more">Learn More</a>
+      </div>
+      <div class="service-item">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Buy A Property</h3>
+          <p>Want to purchase your dream home or a comfortable place for your business? Contact us today, and we will help you make your dream of owning a home or a profitable investment come true!</p>
+          <a href="#services" class="learn-more">Learn More</a>
+      </div>
+      <div class="service-item">
+          <i class="fas fa-key"></i>
+          <h3>Rent A Property</h3>
+          <p>Need a home or a comfortable office for your business on rental terms? Trust us and we will find the perfect place for living or business, according to your needs and budget.</p>
+          <a href="#services" class="learn-more">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Reviews -->
+<section id="reviews" class="reviews section fade-in">
+  <div class="container container__reviews">
+      <h2>Hear What They Say</h2>
+      <div class="reviews__descript">
+      <a class="underline" href="">View all reviews</a>
+      </div>
+      <div class="reviews__content">
+          <div class="reviews__image">
+              <img src="./images/kubyk3.jpg" alt="Reviews Image">
+          </div>
+          <div class="reviews__cards">
+              <div class="card">
+                  <div class="card-body">
+                      <img src="./images/reviews/сustomer1.png" alt="Customer">
+                      <p class="card-text">The combination of comfort at 'Urban Oasis', nature, and convenient transportation makes this place ideal for living.</p>
+                      <h5 class="card-title">Marek Gracy</h5>
+                      <p class="card-subtitle">Customer</p>
+                      <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-body">
+                      <img src="./images/reviews/сustomer2.png" alt="Customer">
+                      <p class="card-text">""GreenSmart Residence provides all the conveniences I expected. Smart home management systems make life significantly easier.</p>
+                      <h5 class="card-title">Rozina Mayer</h5>
+                      <p class="card-subtitle">Customer</p>
+                      <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                    <img src="./images/reviews/сustomer3.png" alt="Customer">
+                    <p class="card-text">The modern conveniences and eco-friendliness of 'GreenSmart Residence' make my life here extremely comfortable. I feel a true sense of harmony in this place.</p>
+                    <h5 class="card-title">Olivia Gunadis</h5>
+                    <p class="card-subtitle">Customer</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>  
+                </div>
+            </div>
+              <div class="card">
+                  <div class="card-body">
+                      <img src="./images/reviews/сustomer4.png" alt="Customer">
+                      <p class="card-text">"I am very satisfied with my new home in 'Urban Oasis'. Comfort and nature are nearby, as well as convenient transportation.</p>
+                      <h5 class="card-title">Pawel Stozky</h5>
+                      <p class="card-subtitle">Customer</p>
+                      <div class="stars">⭐⭐⭐⭐⭐</div>  
+                  </div>
+              </div>    
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contacts -->
+<section id="contact" class="contact section fade-in">
+  <div class="container">
+      <div class="contact__block">
+          <div class="contact-section__container">
+              <div class="box__address">
+                <a href="#">Where to find us:</a>
+                <p>Prikladna St., 123<br>Bratislava, Slovakia</p>
+              </div>
+              <div class="map">
+              <iframe
+                class="contact-section__map "
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d340806.52000723744!2d17.10354147061658!3d48.13818285296553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssk!4v1740756680233!5m2!1sen!2ssk" width="600" height="450" style="border: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <div class="box__contact-list">
+            <h3>Our contacts</h3>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  Phone:
+                  <a class="contact-tel" href="tel:+88888#">+ 88 (888) 888 88 88</a>
+                </li>
+                <li class="contact-item">
+                  Email:
+                  <a class="contact-email" href="mailto:#">xxxxxxxx@gmail.com</a>
+                </li>
+              </ul> 
+              <div class="contact__button">
+                <button class="open-form" data-form="order-consultation">Order a consultation</button>   
+              </div>
+              <div class="social-media">
+                <a href="https://www.youtube.com/" target="_blank" class="social-icon youtube"><img src="./images/icons/youtube.png" alt="YouTube"></a>
+                <a href="https://www.whatsapp.com/" target="_blank" class="social-icon whatsapp"><img src="./images/icons/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-icon linkedin"><img src="./images/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://telegram.org/" target="_blank" class="social-icon telegram"><img src="./images/icons/telegram.png" alt="Telegram"></a>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="line"></div>
+</section>
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">      
+      <div class="footer__box">
+        <small class="copyright">&copy;2025</small>
+        <small class="copyright-name">All rights reserved</small>
+      </div>
+    </div>
+  </footer> 
+
+  <!-- Modal buy and consultation -->
+ <div id="modwin" class="modwin">
+  <div class="modwin-content">
+      <span class="close_modwin">&times;</span>
+      <div id="modwin_form-content">
+      </div>
+  </div>
+</div>
+
+<!-- Modal Window project -->
+<div id="modal_plan" class="modal_plan">
+  <div class="modal_plan-content">
+    <div class="modal_plan-header">
+      <h2 id="modal_plan-title">Апартаменти №</h2>
+      <span class="close_plan">&times;</span>
+    </div>
+    <div class="modal_plan-body">
+      <div class="plan-container">
+        <img id="plan-image" src="#" alt="План приміщення">
+        <table id="plan-table"></table>
+      </div>
+      <div class="status-options">
+        <label><input type='radio' name='status' value='sold'> Продано</label>
+        <label><input type='radio' name='status' value='free'> Вільно</label>
+        <label><input type='radio' name='status' value='reserved'> Зарезервовано</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal Window gallery -->
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-image">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+  <script src="https://kit.fontawesome.com/bd15e2e00c.js" crossorigin="anonymous"></script>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/modwin.js"></script>
+  <script src="./js/polygon.js"></script>
+
+  </body>
+</html>

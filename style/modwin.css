@@ -1,0 +1,254 @@
+/* modwin start */
+.modwin {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1999;
+}
+
+.modwin-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 700px;
+  min-width: 340px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+#modwin_form-content h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.close_modwin {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_modwin:hover,
+.close_modwin:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+  text-align: start;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+}
+
+textarea,
+input,
+select {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: calc(100% - 22px);
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#property-type {
+  font-size: 14px;
+}
+#property-type option {
+  font-size: 12px; 
+}
+button.btn.submit-btn {
+    display: inline-block;
+  padding: 8px 12px;
+  background-color: #29678f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background-color 0.5s ease;
+}
+
+button.btn.submit-btn:hover {
+  background-color: #0c204f;
+}
+/* modwin end */
+
+/* polygon modal-plan start */
+.modal_plan {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal_plan-content {
+  background: #cecece;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border: 1px solid #302e2e;
+  border-radius: 8px;
+}
+
+.modal_plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close_plan {
+  color: #3016bf;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal_plan-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#modal_plan-title {
+  font-size: 18px;
+  color: #3016bf;
+  margin-bottom: 10px;
+}
+
+#plan-image {
+  max-width: 60%;
+  height: auto;
+}
+
+#plan-table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+#plan-table th,
+#plan-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.status-options {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 592px) {
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #plan-image {
+    max-width: 86%;
+  }
+  #plan-table {
+    width: 86%;
+  }
+}
+/* polygon modal-plan end */
+
+/* mod gallery*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* Scrolling prohibition */
+body.modal-open {
+  overflow: hidden;
+}
