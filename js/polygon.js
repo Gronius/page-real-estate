@@ -49,7 +49,7 @@ document.querySelectorAll("svg polygon").forEach(polygon => {
 
 const plans = {
   plan1: {
-    image: "./images/plan120.jpg",
+    image: "./images/plan120.png",
     title: "Apartments №1",
     table:
       "<tr><th>Premises</th><th>Area</th></tr>" +
@@ -62,7 +62,7 @@ const plans = {
       "<tr><td>Total area</td><td>120 sq.m.</td></tr>",
   },
   plan2: {
-    image: "./images/plan120.jpg",
+    image: "./images/plan120.png",
     title: "Apartments №2",
     table:
       "<tr><th>Premises</th><th>Area</th></tr>" +
@@ -76,7 +76,7 @@ const plans = {
       "<tr><td>Total area</td><td>140 sq.m.</td></tr>",
   },
   plan3: {
-    image: "./images/plan120.jpg",
+    image: "./images/plan120.png",
     title: "Apartments №3",
     table:
       "<tr><th>Premises</th><th>Area</th></tr>" +
@@ -89,7 +89,7 @@ const plans = {
       "<tr><td>Total area</td><td>100 sq.m.</td></tr>",
   },
   plan4: {
-    image: "./images/plan140.jpg",
+    image: "./images/plan140.png",
     title: "Apartments №4",
     table:
       "<tr><th>Premises</th><th>Area</th></tr>" +
